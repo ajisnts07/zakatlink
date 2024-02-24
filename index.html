@@ -87,6 +87,45 @@
       </div>
     </div>
 
+    <script>
+      // swiper-onboarding
+      var swiper = new Swiper('.swiper', {
+        slidesPerView: 1,
+        spaceBetween: 10,
+        loop: false,
+        pagination: {
+          el: '.swiper-pagination',
+          clickable: true,
+        },
+        navigation: {
+          nextEl: '#nextButton',
+        },
+        on: {
+          reachEnd: function () {
+            document.getElementById('nextButton').textContent = 'Mulai';
+            document.getElementById('skipButton').style.color = '#ffffff';
+          },
+          slideChange: function () {
+            if (swiper.isEnd) {
+              document.getElementById('nextButton').textContent = 'Mulai';
+              document.getElementById('nextButton').addEventListener('click', () => {
+                window.location.href = '../../views/errors/404.html';
+              });
+            } else {
+              document.getElementById('nextButton').textContent = 'Next';
+              document.getElementById('nextButton').addEventListener('click', () => {
+                swiper.slideNext();
+              });
+              document.getElementById('skipButton').style.color = '#8594a7';
+            }
+          },
+        },
+        keyboard: {
+          enabled: true,
+        },
+      });
+    </script>
+
     <!-- javascript -->
     <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js" type="text/javascript"></script>
     <script src="./node_modules/swiper/swiper-bundle.min.js" type="text/javascript"></script>
