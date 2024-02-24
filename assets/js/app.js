@@ -1,5 +1,3 @@
-import Swiper from 'swiper';
-
 // swiper-onboarding
 var swiper = new Swiper('.swiper', {
   slidesPerView: 1,
