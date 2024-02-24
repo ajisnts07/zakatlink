@@ -1,0 +1,22 @@
+// reset
+
+// body
+body {
+  background-color: $bg-secondary;
+  margin: 0;
+  padding: 0;
+  .card {
+    border: none;
+  }
+  a {
+    text-decoration: none;
+  }
+  ul {
+    list-style-type: none;
+    li .nav-link {
+      display: flex;
+      align-items: center;
+      padding: 0;
+    }
+  }
+}

@@ -1,0 +1,39 @@
+// mixins
+
+// display flex, center, center
+@mixin d-flex() {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+// typography
+@mixin typography($font-family, $font-size, $font-weight, $line-height, $color) {
+  font-family: $font-family;
+  font-size: $font-size;
+  font-weight: $font-weight;
+  line-height: $line-height;
+  color: $color;
+  margin-bottom: 0;
+}
+
+// button
+@mixin button($background-color, $color, $border: none) {
+  background-color: $background-color;
+  border: $border;
+  padding: 16px 40px;
+  &:hover {
+    background-color: $background-color !important;
+    border: $border;
+    padding: 16px 40px;
+    opacity: 0.9;
+  }
+  &:hover:focus {
+    animation: pulse 1s;
+    box-shadow: 0 0 0 0.8em transparent;
+  }
+  p,
+  .detail {
+    color: $color;
+  }
+}

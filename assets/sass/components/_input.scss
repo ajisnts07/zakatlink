@@ -1,0 +1,22 @@
+// input
+input,
+text-area,
+select {
+  border: none !important;
+  color: $text-secondary !important;
+  background-color: $bg-secondary !important;
+  &:active,
+  &:focus {
+    outline: 0.5px solid $primary-color !important;
+    transition: outline 1s ease-in-out;
+    box-shadow: none !important;
+    border: none !important;
+    background-color: $primary-color;
+  }
+  &::placeholder {
+    color: $text-secondary !important;
+  }
+}
+textarea::placeholder {
+  color: $text-secondary !important;
+}

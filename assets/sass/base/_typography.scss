@@ -1,0 +1,25 @@
+// typography
+
+// import
+@import '../base/mixins';
+
+// heading 1
+h1 {
+  @include typography($poppins-bold, 24px, 700, 32px, $text-primary);
+}
+// heading 2
+h2 {
+  @include typography($poppins-semibold, 20px, 600, 24px, $text-primary);
+}
+// heading 3
+h3 {
+  @include typography($poppins-medium, 16px, 500, 24px, $text-primary);
+}
+// paragraph
+p {
+  @include typography($poppins-regular, 16px, 400, 24px, $text-secondary);
+}
+// detail
+.detail {
+  @include typography($poppins-regular, 12px, 400, 20px, $text-secondary);
+}

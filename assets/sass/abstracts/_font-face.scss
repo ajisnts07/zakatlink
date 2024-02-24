@@ -1,0 +1,22 @@
+// font-face
+
+// poppins bold
+@font-face {
+  font-family: $poppins-bold;
+  src: url('#{$font-path}Poppins-Bold.ttf');
+}
+// poppins semibold
+@font-face {
+  font-family: $poppins-semibold;
+  src: url('#{$font-path}Poppins-SemiBold.ttf');
+}
+// poppins medium
+@font-face {
+  font-family: $poppins-medium;
+  src: url('#{$font-path}Poppins-Medium.ttf');
+}
+// poppins regular
+@font-face {
+  font-family: $poppins-regular;
+  src: url('#{$font-path}Poppins-Regular.ttf');
+}

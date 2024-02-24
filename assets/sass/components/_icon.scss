@@ -1,0 +1,13 @@
+// icon
+
+// import
+@import '../base/mixins';
+
+.icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 100%;
+  background-color: $bg-secondary;
+  color: $primary-color;
+  @include d-flex();
+}

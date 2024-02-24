@@ -1,0 +1,15 @@
+// header
+header {
+  background-color: red;
+  nav {
+    .navbar-brand img {
+      width: 40px;
+      height: 40px;
+    }
+    .navbar-title {
+      .detail {
+        color: $text-primary;
+      }
+    }
+  }
+}

@@ -1,0 +1,11 @@
+// swiper
+.swiper {
+  .swiper-pagination-bullet {
+    background-color: $text-secondary;
+    outline: none;
+    box-shadow: none;
+  }
+  .swiper-pagination-bullet-active {
+    background-color: $text-secondary;
+  }
+}

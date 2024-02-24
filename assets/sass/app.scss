@@ -1,0 +1,23 @@
+// import modules
+@import '../../node_modules/bootstrap/scss/bootstrap.scss';
+@import '../../node_modules/swiper/swiper.scss';
+
+// abstracts
+@import './abstracts/variables';
+@import './abstracts/font-face';
+@import './abstracts/keyframes';
+
+// base
+@import './base/reset';
+@import './base/typography';
+@import './base/header';
+@import './base/footer';
+
+// components
+@import './components/button';
+@import './components/accordion';
+@import './components/input';
+@import './components/icon';
+@import './components/swiper';
+
+// layouts
